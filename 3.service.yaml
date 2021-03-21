@@ -1,0 +1,20 @@
+# --------------------------------------
+# -- Service for grpcox
+# --------------------------------------
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: grpcox
+  namespace: grpcox
+  labels:
+    run: grpcox
+    app: grpcox
+spec:
+  ports:
+    - port: 6969
+      name: grpcox
+      protocol: TCP
+      targetPort: 6969
+  selector:
+    run: grpcox
