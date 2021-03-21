@@ -6,7 +6,7 @@ metadata:
   namespace: grpcox
 spec:
   hosts:
-    - "grpcox.jahlovesmeandweed.club"
+    - "example.com"
   gateways:
     - grpcox-gateway
   http:
